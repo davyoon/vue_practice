@@ -7,9 +7,11 @@
 </head>
 <body>
 	<div id="app">
-  	<button v-on:click="increase">Click</button>
-  	<p>{{ counter }}</p>
-  	<p v-on:mousemove="updateCoordinates">Coordinates: {{ x }} / {{ y }}</p>
+  	<button v-on:click="counter++">Increase</button>
+  	<button v-on:click="counter--">Decrease</button>
+  	<button v-on:click="secondCounter++">Increase Second</button>
+  	<p>Counter: {{ counter }} | {{ secondCounter }}</p>
+  	<p>Result: {{ result() }} | {{ output }}</p>
 	</div>
 
 
